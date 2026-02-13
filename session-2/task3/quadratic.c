@@ -15,12 +15,17 @@ int main( void ) {
     float b = -5.0;
     float c = 6.0;
     float root1, root2;
-
+    float sub = pow(b,2) - 4*a*c;
     /*
      * Implement the formula for the 2 roots of a quadratic.
      * You can define additional variable for intermediate results to make the code simpler.
      * Print out the final results for the 2 roots as float values.
      */
+
+    root1 = -b+sqrt(sub)/2*a;
+    root2 = -b-sqrt(sub)/2*a;
+    printf("%f.3", root1);
+    printf("%f.3", root2);
 
     
 
