@@ -10,9 +10,9 @@
  int main( void ) {
 
     // define and initialise variables for the problem data 
-   float Salary = 30000;
-   float NI = 0.09;
-   float Tax = 0.25 ;
+   float Salary = 36250;
+   float NI = 0.08;
+   float Tax = 0.15 ;
    float Salary_remaining;
    float NI_contribution;
    float Tax_contribution;
@@ -31,12 +31,11 @@
    }
    Take_home = Salary_remaining - Tax_contribution;
 
-
     // Use only these print statement with appropriate formatting and variable names
-    printf("%.2f Salary £\n",Salary);
-    printf("%.2f NI contribution £\n",NI_contribution);
-    printf("%.2f Tax contribution £\n",Tax_contribution);
-    printf("%.2f Take home salary £\n",Take_home);
+   printf("£%.2f Salary\n", Salary);
+   printf("£%.2f NI contribution\n", NI_contribution);
+   printf("£%.2f Tax contribution\n", Tax_contribution);
+   printf("£%.2f Take home salary\n", Take_home);
 
     return 0;
  }
